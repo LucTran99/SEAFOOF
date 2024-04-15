@@ -613,13 +613,20 @@
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Blog</h6>
-                <h1>Latest From Our Blog</h1>
+                <h1>Tin tức mới nhất</h1>
             </div>
             <div class="row pb-3">
+            <?php  
+                if(!empty($posts)):
+
+                      foreach($posts as $post):
+                           
+                     
+                    ?>
                 <div class="col-lg-4 col-md-6 mb-4 pb-2">
                     <div class="blog-item">
                         <div class="position-relative">
-                            <img class="img-fluid w-100" src="assets/img/muc-chien-gion-voi-noi-chien-khong-dau-4 (1).jpg" alt="">
+                            <img class="img-fluid w-100" src="assets/img/<?php echo $post -> picture; ?>" alt="">
                             <div class="blog-date">
                                 <h6 class="font-weight-bold mb-n1">01</h6>
                                 <small class="text-white text-uppercase">Jan</small>
@@ -635,6 +642,17 @@
                         </div>
                     </div>
                 </div>
+                    <?php
+                    endforeach;
+                endif;
+
+                
+
+
+
+                    ?>
+
+
                 <div class="col-lg-4 col-md-6 mb-4 pb-2">
                     <div class="blog-item">
                         <div class="position-relative">
@@ -673,6 +691,9 @@
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
         </div>
     </div>

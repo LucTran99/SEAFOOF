@@ -19,11 +19,47 @@ class PagesController extends BaseController
     );
     $this->render('home', $data);
   }
+
+
+
   public function about()
   {
 	  $this->render('about');
   
   }
+
+
+
+  // Services
+  public function services()
+  {
+	  $this->render('services');
+  
+  }
+
+
+
+  public function news()
+  {
+	  $this->render('news');
+  
+  }
+
+
+
+  public function contact()
+  {
+	  $this->render('contact');
+  
+  }
+
+
+
+
+
+
+
+
 
   public function error()
   {

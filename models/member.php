@@ -19,12 +19,21 @@ class Member
   {
     $list = [];
     $db = DB::getInstance();
-    $req = $db->query('SELECT * FROM members');
+    $req = $db->query('SELECT * FROM member');
 
     foreach ($req->fetchAll() as $item) {
       $list[] = new Member($item['id'], $item['name']);
     }
 
     return $list; // Trả về tất cả loại(catogory) trong csdl
+  }
+
+
+  
+  static function get($id){
+    $db = DB::getInstance();
+    $req = $db->query('SELECT * FROM member where id='.$id);
+    $item= $req->fetch();
+   return new Member($item['id'], $item['name']);
   }
 }

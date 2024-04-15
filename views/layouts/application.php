@@ -79,20 +79,21 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index.php" class="nav-item nav-link active">Trang chủ</a>
-                        <a href="index.php?controller=pages&action=about" class="nav-item nav-link">Sản phẩm</a>
-                        <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
-                        <a href="package.html" class="nav-item nav-link">Tin tức</a>
+                        <a href="index.php?controller=pages&action=about" class="nav-item nav-link">Về chúng tôi</a>
+                        <a href="index.php?controller=pages&action=services" class="nav-item nav-link">Dịch vụ</a>
+                        <a href="index.php?controller=pages&action=news" class="nav-item nav-link">Tin tức</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Giới thiệu</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                <!-- <a href="blog.html" class="dropdown-item">Blog Grid</a> -->
+                                <a href="?controller=posts&action=home" class="dropdown-item">Blog Grid</a>
                                 <a href="single.html" class="dropdown-item">Blog Detail</a>
-                                <a href="destination.html" class="dropdown-item">Destination</a>
-                                <a href="guide.html" class="dropdown-item">Travel Guides</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="?controller=posts&action=destination" class="dropdown-item">Destination</a>
+                                <a href="?controller=posts&action=travels-guides" class="dropdown-item">Travel Guides</a>
+                                <a href="?controller=posts&action=testimonial" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                        <a href="index.php?controller=pages&action=contact" class="nav-item nav-link">Liên hệ</a>
                     </div>
                 </div>
             </nav>
@@ -107,7 +108,7 @@
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="" class="navbar-brand">
-                    <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
+                    <h1 class="text-primary"><span class="text-white">SEAFO</span>OD</h1>
                 </a>
                 <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
@@ -119,7 +120,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Dịch vụ của chúng tôi</h5>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
                     <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>

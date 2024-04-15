@@ -15,6 +15,8 @@ class Category
    
   }
 
+
+  // Lấy hết dữ liệu
   static function all()
   {
     $list = [];
@@ -27,4 +29,15 @@ class Category
 
     return $list; // Trả về tất cả loại(catogory) trong csdl
   }
+
+
+  // Lấy 1 dòng dữ liệu
+  static function get($id){
+    $db = DB:: getInstance();
+    $req = $db-> query("SELECT * FROM categories WHERE id =". $id);
+    foreach($req-> fetchAll() as $item){
+      return new Category($item['id'], $item['title']);
+    }
+  }
 }
+

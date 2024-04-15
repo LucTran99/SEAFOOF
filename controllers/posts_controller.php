@@ -21,4 +21,29 @@ class PostsController extends BaseController
     $data = array('posts' => $posts);
     $this->render('home', $data);
   }
+
+  // Destination
+  public function destination()
+  {
+	$posts = Post::all();
+    $data = array('posts' => $posts);
+    $this->render('destination', $data);
+
+  }
+
+  // travel-guides
+
+  public function travelGuides(){
+    $posts = Post::all();
+    $data = array('posts' => $posts);
+    $this->render('travelsGuides', $data);
+  }
+
+
+ public function testimonial(){
+    $posts = Post::all();
+    $data = array('posts' => $posts);
+    $this->render('testimonial', $data);
+  }
+
 }

@@ -2,6 +2,10 @@
 <!-- Quản lí tin tức -->
 
 <?php
+require_once ('models/category.php');
+require_once ('models/member.php');
+
+
 class Post
 {
   public $id;
@@ -12,6 +16,9 @@ class Post
   public $createdby;
   public $categoryid;  // Một bài viết chỉ thuộc 1 category 
 
+  public $category;
+  public $member;
+
   function __construct($id, $title, $content, $picture, $datecreated, $createdby, $categoryid)
   {
     $this->id = $id;
@@ -21,6 +28,9 @@ class Post
     $this-> datecreated = date_create($datecreated);
     $this-> createdby =  $createdby;
     $this-> categoryid =  $categoryid;
+    $this -> category= Category::get($categoryid);
+    $this -> member= Member::get($createdby);
+    
   }
 
   static function all()

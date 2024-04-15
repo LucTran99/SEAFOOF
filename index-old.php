@@ -712,6 +712,8 @@
                 <h1>Latest From Our Blog</h1>
             </div>
             <div class="row pb-3">
+      
+
                 <div class="col-lg-4 col-md-6 mb-4 pb-2">
                     <div class="blog-item">
                         <div class="position-relative">
@@ -731,6 +733,9 @@
                         </div>
                     </div>
                 </div>
+           
+
+
                 <div class="col-lg-4 col-md-6 mb-4 pb-2">
                     <div class="blog-item">
                         <div class="position-relative">
@@ -769,6 +774,9 @@
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
         </div>
     </div>
